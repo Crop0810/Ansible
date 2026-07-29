@@ -1,2 +1,1 @@
-# Ansible
-Ansible playbooks and setup info
+This is a repo for storing Ansible Playbooks that I can use internally
