@@ -1,0 +1,7 @@
+#ansible-playbook ./scripts/apt-dist.yml --user iron7714 -i ./midgard/hosts
+- hosts: "*"
+  tasks:
+    - name: apt
+      apt:
+        update_cache: yes
+        upgrade: 'dist'

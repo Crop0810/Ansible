@@ -1,0 +1,6 @@
+#ansible-playbook ./scripts/pihole-update.yml --user iron7714 -i ./midgard/hosts
+- hosts: "*"
+  become: Yes
+  tasks:
+    - name: Update all Pihole instances
+      ansible.builtin.command: pihole -up

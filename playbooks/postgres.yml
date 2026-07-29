@@ -1,0 +1,21 @@
+# Ansible Playbook for Postgres SQL
+---
+-name: install postgres sql on all nodes for ha cluster
+hosts: mimir_cluster
+become: yes
+tasks:
+  - name: update apt cache
+    apt:
+      update_cache: yes
+      upgrade: 'yes'
+    
+  - name: install postgres
+    apt:
+        name: postgresql-common
+        state: present
+        update_cache: true
+
+  - name: add the postgres apt repositories
+    ansible.builtin.shell: /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh
+    responses:
+      'Press Enter to continue, or Ctrl-C to abort.': ''
