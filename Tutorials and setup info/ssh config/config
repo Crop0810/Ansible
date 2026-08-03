@@ -1,0 +1,7 @@
+# This is an example of how to format the SSH file for logins with specific users using specific keys
+# Host $hostname-$usertype
+# Hostname $hostname.$domain.com
+# User $username
+# Port $ssh-port
+# IdentityFile $Cert-full-path
+# IdentitiesOnly yes

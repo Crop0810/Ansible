@@ -1,0 +1,9 @@
+---
+- name: "Basic OS Setup | Ensure Git is installed."
+  block:
+    - name: "OS Setup | Install Git for Linux."
+      package:
+        name: "git"
+        state: "present"
+      when:
+        - "ansible_system == 'Linux'"

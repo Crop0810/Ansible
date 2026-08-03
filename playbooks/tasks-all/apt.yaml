@@ -1,0 +1,6 @@
+---
+# Update and Upgrade APT
+- name: Update Cache and upgrade
+  apt:
+    update_cache: yes
+    upgrade: yes

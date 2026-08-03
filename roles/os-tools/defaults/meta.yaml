@@ -1,0 +1,30 @@
+---
+# Role variables
+os_setup_install_zsh: false
+
+# User variables.
+os_setup_users: []
+#  - name: "someuser"
+#    group: "somegroup"
+#    settings: |
+#     export PATH="/usr/local/sbin:$path"
+#     alias l="ls -AF"
+
+# Oh My ZSH template vars.
+os_setup_zshrc_create: true
+os_setup_zshrc_template: "templates/zshrc.zsh-template.j2"
+os_setup_zshrc_backup: true
+os_setup_zshrc_force: true
+os_setup_zsh_theme: "powerlevel10k/powerlevel10k"
+os_setup_case_sensitive: false
+os_setup_hyphen_insensitive: false
+os_setup_disable_auto_update: false
+os_setup_update_zsh_days: 13
+os_setup_disable_ls_colors: false
+os_setup_disable_auto_title: false
+os_setup_enable_correction: false
+os_setup_completion_waiting_dots: false
+os_setup_disable_untracked_files_dirty: false
+os_setup_hist_stamps: "mm/dd/yyyy"
+os_setup_zsh_custom: "$ZSH/custom"
+os_setup_plugins: []

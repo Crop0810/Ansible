@@ -1,0 +1,21 @@
+---
+galaxy_info:
+  author: "crop0810"
+  description: "Installs and configures the basic post install tools for Linux and MacOSX."
+
+  license: "MIT"
+
+  min_ansible_version: "2.0"
+
+  platforms:
+    - name: "MacOSX"
+      versions:
+        - "all"
+    - name: "Ubuntu"
+      versions:
+        - "all"
+
+  galaxy_tags:
+    - "zsh"
+
+dependencies: []

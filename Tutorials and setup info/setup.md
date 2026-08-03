@@ -10,5 +10,5 @@ This will be the steps to walk thour after the first boot of the ansible machine
     - sudo apt udgrade
 5. Install Ansible using the built in repo
     - sudo apt install ansible
-6. (incomplete) build the users out for ansible on the ansible machine (there is an ansible playbook I created before to do this, but I can't remember where it is)
+6. (incomplete) build the users out for ansible on the ansible machine, this needs to be done manuallly on each of the target servers using the user setup file
 7. (incomplete) build the ansible playbook for the shell modifications and plugins

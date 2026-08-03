@@ -1,0 +1,14 @@
+---
+- name: "Oh-My-Zsh | establish home directory."
+  set_fact:
+    os_setup_user_home_dir: "{{ (ansible_system == 'Darwin') | ternary('Users', 'home') }}"
+
+- name: "Basic OS Setup | ensure zsh is installed."
+  block:
+    - name: "OMZ | install zsh for Linux."
+      package:
+        name: "zsh"
+        state: "present"
+      when:
+        - "ansible_system == 'Linux'"
+        - "os_setup_install_zsh"
